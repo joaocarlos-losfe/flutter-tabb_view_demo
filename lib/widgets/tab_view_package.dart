@@ -19,6 +19,7 @@ class _TabbedViewExampleState extends State<TabbedViewExample> {
     super.initState();
     _controller = TabbedViewController([
       TabData(
+        closable: false,
         text: 'Início',
         content: SecondHomePage(onOpenNewTab: _addNewTabFromHome),
       ),
